@@ -29,6 +29,7 @@ WORKDIR /usr/local/bin/salmon-${salmon_version}/build
 RUN cmake -DBOOST_ROOT=/usr/include/boost -DTBB_INSTALL_DIR=/usr/include/tbb -DCMAKE_INSTALL_PREFIX=/usr/local/ ..
 RUN make
 RUN make install
+WORKDIR /usr/local/bin/
 
 # set env variables
 ENV LD_LIBRARY_PATH /usr/local/lib:${LD_LIBRARY_PATH}
