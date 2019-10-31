@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # set the environment variables
-ENV salmon_version 0.14.1
+ENV salmon_version 1.0.0
 
 # run update and install necessary tools
 RUN apt-get update -y && apt-get install -y \
